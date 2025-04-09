@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    main.main 
+        form(action="")
+            label(for="USER") Usuario: 
+            input#USER(type="text") 
+            label(for="MAIL") Correo: 
+            input#MAIL(type="email")
+            label(for="MAIL2")
+            input#MAIL2(type="email")
+            label(for="PASS")
+            input#PASS(type="password")
+            input(type="submit" value="Crear")

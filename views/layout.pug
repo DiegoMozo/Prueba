@@ -1,0 +1,19 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/style.css")
+        title= "DMG" + title0
+    body 
+        header.header 
+            a(href="https://www.ipn.mx/" target="blank")
+                img(src="./media/ipn.png", alt="LOGO IPN") 
+            p.msj DMG es una página de estudio para el apoyo a estudiante de ESFM
+            img#DMG(src="./media/DMG.png", alt="LOGO DMG")
+            .osc 
+                label(for="OSC") Modo Oscuro: 
+                input#OSC(type="checkbox", name="OSC") 
+            a(href="https://www.esfm.ipn.mx/" target="blank")
+                img(src="./media/esfm.png", alt="LOGO ESFM") 
+        block content

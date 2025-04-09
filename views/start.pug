@@ -1,0 +1,16 @@
+extends layout
+
+block content 
+    main.main 
+        .container 
+            img(src="./media/DMG.png", alt="DMG LOGO" class="logo")
+            .subcontainer
+                a#D(href="/login" class="letra")  
+                    label.label(for="D") Iniciar Sesión: 
+                    img(src="./media/D.png", alt="LETRA D") 
+                a#M(href="/signup" class="letra")
+                    label.label(for="M") Crear cuenta nueva: 
+                    img(src="./media/M.png", alt="LETRA M")
+                a#G(href="/password" class="letra") 
+                    label.label(for="G") Recuperar contraseña: 
+                    img(src="./media/G.png", alt="LETRA G")

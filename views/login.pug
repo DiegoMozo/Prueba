@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    main.main
+        .subcontainer2
+            img(src="./media/D.png", alt="LETRA D") 
+            img(src="./media/M.png", alt="LETRA M")
+            img(src="./media/G.png", alt="LETRA G")
+        form.form(action="")
+            label.label(for="LUSER") Usuario o correo: 
+            input#LUSER.input(type="text" name="LUSER")
+            label.label(for="LPASS") Contraseña:
+            input#LPASS.input(type="password" name="LPASS")
+            input.submit(type="submit" value="Ingresar") 
+        a(href="/profile") Prueba 
