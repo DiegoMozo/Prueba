@@ -14,7 +14,7 @@ let mProfile = {
     },
     getUsers: async () => {
         try {
-            let listaUsuarios = await pool.query("SELECT * FROM listaUsuarios");
+            let listaUsuarios = await pool.query("SELECT * FROM listausuarios");
             return listaUsuarios.rows;
         } catch(err) {
             throw { stauts: 500, message: "Error al obtener Usuarios" }

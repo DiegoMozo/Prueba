@@ -5,11 +5,12 @@ let cProfile = {
     info: async (req, res) => {
         try {
             let listaUsuarios = await mProfile.getUsers();
-            res.redirect("profile", {title0: " - Profile ", listaUsuarios} );
+            res.render("profile", {title0: " - Profile ", listaUsuarios} );
         } catch(err) {
             error.e500(req, res, err);
         }
     }
+
 };
  
 export default cProfile;
